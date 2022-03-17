@@ -11,13 +11,10 @@ use Illuminate\Database\Eloquent\Model;
 class Ad extends Model
 {
     protected $fillable = [
-        "name","ad_title","city","hoods","street","price","quadrature","estate_types",
+        "name","estate_ad","title","city","hoods","street","price","quadrature","estate_types",
     ];
 
     protected $guarded = [];
 
-    public function Estates()
-    {
-        return $this->hasMany('App\Estate');
-    }
+
 }
