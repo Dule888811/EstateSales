@@ -25,6 +25,7 @@ class CreateAds extends Migration
             $table->decimal('price');
             $table->bigInteger('quadrature')->unsigned();
             $table->string('estate_types','30');
+            $table->boolean('deleted')->default('1');
             $table->rememberToken();
             $table->timestamps();
         });

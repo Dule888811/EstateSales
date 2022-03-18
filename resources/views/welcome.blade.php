@@ -42,6 +42,10 @@
 
             .content {
                 text-align: center;
+
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
             }
 
             .title {
@@ -53,42 +57,27 @@
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
             }
 
             .m-b-md {
                 margin-bottom: 30px;
             }
+            .linkToAdd
+            {
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    <a href="https://blog.laravel.com">Link for adds</a>
+        <a class="linkToAdd" href="{{route('index')}}">"Link for add</a>
 
-                </div>
 
-                <div class="links">
 
-                </div>
-            </div>
-        </div>
     </body>
+
 </html>

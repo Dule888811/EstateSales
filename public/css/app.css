@@ -1,0 +1,7 @@
+#app {
+    text-align: center;
+}
+.formular >.form-input {
+    padding-top: 3%;
+    height: 30%;
+}

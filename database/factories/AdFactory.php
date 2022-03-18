@@ -18,7 +18,7 @@ $factory->define(Ad::class, function (Faker $faker) {
 
             return [
                 'ad_title' => $faker->title,
-                'city' => $faker->city(),
+                'city' => $faker->city,
                 'hoods' => $faker->name,
                 'street' => $faker->streetName,
                 'price' => $faker->randomDigitNotNull,
