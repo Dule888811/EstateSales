@@ -14,4 +14,5 @@ AddController  extends Controller
         return view('/add.index')->with(['add' => $add]);
     }
 
+
 }

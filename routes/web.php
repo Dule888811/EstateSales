@@ -20,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('add/index', 'AddController@index')->name('index');
+Route::post('send/mail', 'MailController@sendData')->name('emails');
 
 
 
