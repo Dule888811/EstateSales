@@ -47,7 +47,7 @@
             <input type="text" name="comment" required></label>
     </div>
     <div class="form-input">
-    <input type="submit"    value="Send data in e-mail"><br/>
+    <input type="submit"  id="submitBtn"   value="Send data in e-mail"><br/>
     </div>
 </div>
 

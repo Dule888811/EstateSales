@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#email").focusout(function(){
+    $("#submitBtn").click(function(){
 
 
            email_validate();
